@@ -8,12 +8,8 @@
       - [Don't](#donts)
       - [Spacing](#spacing)
       - [Formatting](#formatting)
-  <!-- 3. [Sass Specifics](#sass-specifics) -->
-  <!-- 4. [Rule Ordering](#rule-ordering) -->
   3. [Nesting](#nesting)
   4. [BEM](#bem)
-  <!-- 7. [Selector Naming](#selector-naming) -->
-  <!-- 8. [Namespaced Classes](#namespaced-classes) -->
 
 ## Overview
 
