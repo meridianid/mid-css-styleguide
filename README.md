@@ -70,6 +70,32 @@ Please strictly follow the rules, unless you are really sure about what you are 
 - Use leading zeros for decimal values `opacity: 0.4;` instead of `opacity: .4;`
 - Put spaces before and after child selector `div > span` instead of `div>span`
 
+## Sass Specifics
+
+## Rule Ordering
+
+## Nesting
+
+- As a general rule of thumb, avoid nesting selectors more than 3 levels deep
+- Prefer using nesting as a convenience to extend the parent selector over targeting nested elements. For example:
+```scss
+  .navbar {
+      padding: 24px;
+
+      &--small {
+          padding: 12px;
+      }
+  }
+```
+Nesting can be really easily avoided by smart class naming (with the help of BEM) and avoiding bare tag selectors.
+
+## BEM
+
+## Selector Naming
+
+## Namespaced Classes
+
+
 [title]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/title.png "Meridian.id CSS Styleguide"
 [cover]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/cover.png "Meridian.id CSS Styleguide"
 [mission]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/mission.png "Meridian.id"
