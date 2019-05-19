@@ -57,6 +57,17 @@ Please strictly follow the rules, unless you are really sure about what you are 
 - Add a new line at the end of .scss files
 - Trim excess whitespace
 
+```scss
+// Spacing Summary
+
+.modal,
+.dialog {
+  color: white;
+  background-color: coral;
+}
+
+```
+
 ### Formatting
 
 - All selectors are lower case, hyphen separated aka “spinal case” eg. `.my-class-name`
