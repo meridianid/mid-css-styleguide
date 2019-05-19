@@ -53,7 +53,7 @@ Please strictly follow the rules, unless you are really sure about what you are 
 - Put spaces after `:` in property declarations
   - E.g. `color: red;` instead of `color:red;`
 - Put spaces before `{` in rule declarations
-  - E.g. `.o-modal {` instead of `.o-modal{`
+  - E.g. `.modal {` instead of `.modal{`
 - Write your CSS one line per property
 - Add a line break after `}` closing rule declarations
 - When grouping selectors, keep individual selectors on a single line
