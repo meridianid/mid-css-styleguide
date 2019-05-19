@@ -8,12 +8,12 @@
       - [Don't](#donts)
       - [Spacing](#spacing)
       - [Formatting](#formatting)
-  3. [Sass Specifics](#sass-specifics)
-  4. [Rule Ordering](#rule-ordering)
-  5. [Nesting](#nesting)
-  6. [BEM](#bem)
-  7. [Selector Naming](#selector-naming)
-  8. [Namespaced Classes](#namespaced-classes)
+  <!-- 3. [Sass Specifics](#sass-specifics) -->
+  <!-- 4. [Rule Ordering](#rule-ordering) -->
+  3. [Nesting](#nesting)
+  4. [BEM](#bem)
+  <!-- 7. [Selector Naming](#selector-naming) -->
+  <!-- 8. [Namespaced Classes](#namespaced-classes) -->
 
 ## Overview
 
@@ -72,14 +72,6 @@ Please strictly follow the rules, unless you are really sure about what you are 
 
 ---
 
-## Sass Specifics
-
----
-
-## Rule Ordering
-
----
-
 ## Nesting
 
 - As a general rule of thumb, avoid nesting selectors more than 3 levels deep
@@ -135,17 +127,6 @@ Choose your modifiers wisely. These two rules have very different meaning:
 .block--modifier .block__element { color: red; }
 .block__element--modifier { color: red; }
 ```
-
----
-
-## Selector Naming
-
----
-
-## Namespaced Classes
-
----
-
 
 [title]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/title.png "Meridian.id CSS Styleguide"
 [cover]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/cover.png "Meridian.id CSS Styleguide"
