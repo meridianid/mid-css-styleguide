@@ -85,11 +85,11 @@ Please strictly follow the rules, unless you are really sure about what you are 
 - Prefer using nesting as a convenience to extend the parent selector over targeting nested elements. For example:
   ```scss
   .navbar {
-      padding: 24px;
+    padding: 24px;
 
-      &--small {
-          padding: 12px;
-      }
+    &--small {
+      padding: 12px;
+    }
   }
 
   // Will compiled into these
