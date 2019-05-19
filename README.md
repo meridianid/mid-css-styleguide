@@ -70,15 +70,21 @@ Please strictly follow the rules, unless you are really sure about what you are 
 - Use leading zeros for decimal values `opacity: 0.4;` instead of `opacity: .4;`
 - Put spaces before and after child selector `div > span` instead of `div>span`
 
+---
+
 ## Sass Specifics
 
+---
+
 ## Rule Ordering
+
+---
 
 ## Nesting
 
 - As a general rule of thumb, avoid nesting selectors more than 3 levels deep
 - Prefer using nesting as a convenience to extend the parent selector over targeting nested elements. For example:
-```scss
+  ```scss
   .navbar {
       padding: 24px;
 
@@ -86,14 +92,59 @@ Please strictly follow the rules, unless you are really sure about what you are 
           padding: 12px;
       }
   }
-```
+
+  // Will compiled into these
+  .navbar {
+    padding: 24px;
+  }
+  .navbar--small {
+    padding: 12px;
+  }
+  ```
+
 Nesting can be really easily avoided by smart class naming (with the help of BEM) and avoiding bare tag selectors.
+
+---
 
 ## BEM
 
+Block: Unique, meaningful names for a logical unit of style. Avoid excessive shorthand.
+- Good: `.alert-box` or `.recents-intro` or `.button`
+- Bad: `.feature` or `.content` or `.btn`
+
+Element: styles that only apply to children of a block. Elements can also be blocks themselves. Class name is a concatenation of the block name, two underscores and the element name. Examples:
+- `.alert-box__close`
+- `.expanding-section__section`
+
+Modifier: override or extend the base styles of a block or element with modifier styles. Class name is a concatenation of the block (or element) name, two hyphens and the modifier name. Examples:
+- `.alert-box--success`
+- `.expanding-section--expanded`
+
+### BEM Best practices
+
+Don't `@extend` block modifiers with the block base.
+- Good: `<div class="my-block my-block--modifier">`
+- Bad: `<div class="my-block--modifier">`
+
+Don't create elements inside elements. If you find yourself needing this, consider converting your element into a block.
+- Bad: `.alert-box__close__button`
+
+Choose your modifiers wisely. These two rules have very different meaning:
+
+```scss
+.block--modifier .block__element { color: red; }
+.block__element--modifier { color: red; }
+```
+
+---
+
 ## Selector Naming
 
+---
+
 ## Namespaced Classes
+
+---
 
 
 [title]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/title.png "Meridian.id CSS Styleguide"
