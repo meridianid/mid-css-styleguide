@@ -135,6 +135,10 @@ Choose your modifiers wisely. These two rules have very different meaning:
 .block__element--modifier { color: red; }
 ```
 
+### Acknowledgement
+
+Mostly taken from [Dropbox's CSS Styleguide](https://github.com/dropbox/css-style-guide)
+
 [title]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/title.png "Meridian.id CSS Styleguide"
 [cover]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/cover.png "Meridian.id CSS Styleguide"
 [mission]: https://raw.githubusercontent.com/meridianid/mid-css-styleguide/master/docs/mission.png "Meridian.id"
